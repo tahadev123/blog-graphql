@@ -12,7 +12,7 @@ mutation sendComment(
         name: $name,
         email: $email,
         text: $text,
-        post: {connect: {slog: $slug}}}
+        post: {connect: {slug: $slug}}}
     ) {
       id
     }
